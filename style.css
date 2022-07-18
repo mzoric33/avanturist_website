@@ -1,0 +1,86 @@
+/* PRAVILA ZA OSNOVNO UREĐIVANJE HTML ELEMENATA************************* */
+
+*{box-sizing:border-box;}
+
+body{background-color:#EEEEEE;
+color:#333333;
+font-family:Arial,sans-serif;
+text-align:center;
+margin:0;}
+
+a{color:#333333;
+text-decoration:none;}
+
+a:visited{color:#666666;}
+
+a:hover{color:goldenrod;}
+
+h1,h2,h3,h4,h5,h6{font-family: 'Righteous', cursive;}
+
+img{max-width:100%;
+height:auto;}
+
+p{text-align:left;}
+
+/* PAGE LAYOUT ********************************************************* */
+.grid-container{display:grid;
+min-height:100vh;
+grid-gap:20px;
+grid-template-rows:auto 1fr auto auto;
+/* ciljani ekran width=320px - gap(2*20px) = 280px */
+grid-template-columns:1fr minmax(280px,1200px) 1fr;}
+
+.page-header,.page-footer{grid-column:1/4;}
+.primary,.secondary{grid-column:2/3;}
+
+/* UREĐIVANJE ELEMENATA STRANICE ****************************************** */
+
+.page-header{background:url(slike/compass.jpg) center/cover no-repeat;
+text-transform:uppercase;}
+
+.site-navigation{background-color:rgba(255,255,255,0.65);
+font-weight:bold;
+padding:20px;}
+
+.site-navigation ul{list-style-type:none;
+padding:0;
+margin:0;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(150px,max-content));
+justify-content:center;
+grid-gap:20px;}
+
+.site-title{color:#FFFFFF;
+font-size:8.333vw /* 160px / 1920 *100 = 8.333% == 8.333vw  */;}
+
+.content-columns{display:grid;
+grid-gap:20px;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));}
+
+.page-title{grid-column:1/-1;}
+
+.post{background-color:rgba(255,255,255,0.65);
+padding:10px;}
+
+.secondary ul{list-style-type:none;
+margin:0;
+padding:0;
+line-height:200%;}
+
+.page-footer{font-weight:bold;
+text-transform:uppercase;
+padding:20px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
